@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
+
 File APK = new File('APK//FuerzaVenta_HU1a12.apk')
 
 Mobile.startApplication(APK.getAbsolutePath(), true)
@@ -29,7 +31,7 @@ Mobile.tap(findTestObject('Configuracion regional/CONTINUAR'), 50)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Configuracion regional/Completado'), 50)
 
-Mobile.delay(2)
+Mobile.delay(3)
 
 Mobile.pressBack()
 
