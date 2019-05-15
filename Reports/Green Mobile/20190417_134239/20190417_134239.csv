@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Green Mobile,,,2019-04-17 13:42:47,2019-04-17 13:42:49,"1,929s",FAILED
+,,,,,,
+Test Cases/Ingreso a la Aplicacion,,,2019-04-17 13:42:47,2019-04-17 13:42:49,"1,709s",FAILED
+APK = new java.io.File(APK//FuerzaVenta_HU1a5.apk),,,2019-04-17 13:42:48,2019-04-17 13:42:48,"0,006s",PASSED
+"startApplication(APK.getAbsolutePath(), true)",,,2019-04-17 13:42:48,2019-04-17 13:42:49,"1,252s",FAILED
