@@ -29,7 +29,7 @@ Mobile.tap(findTestObject('Configuracion regional/CONTINUAR'), 50)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Configuracion regional/Completado'), 50)
 
-Mobile.delay(3)
+Mobile.delay(2)
 
 Mobile.pressBack()
 
@@ -185,7 +185,7 @@ Mobile.waitForElementPresent(findTestObject('Datos Remitente/1 Persona natural')
 
 Mobile.tap(findTestObject('Datos Remitente/1 Persona natural'), 50)
 
-Mobile.scrollToText('Dirección')
+Mobile.scrollToText('Teléfono')
 
 Mobile.waitForElementPresent(findTestObject('Datos Remitente/Regimen'), 50)
 
@@ -221,52 +221,63 @@ Mobile.waitForElementPresent(findTestObject('Datos Remitente/Confirmacin Aceptar
 
 Mobile.tap(findTestObject('Datos Remitente/Confirmacin Aceptar'), 50)
 
-'Se debe cambiar por DATOS ENVIO ATRAS'
-Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+Mobile.waitForElementPresent(findTestObject('DATOS ENVIO/Tipo de identificacin'), 50)
 
-Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+Mobile.tap(findTestObject('DATOS ENVIO/Tipo de identificacin'), 50)
 
-Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+Mobile.waitForElementPresent(findTestObject('DATOS ENVIO/D.E Cedula de ciudadania'), 50)
 
-Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+Mobile.tap(findTestObject('DATOS ENVIO/D.E Cedula de ciudadania'), 50)
 
-'Se debe cambiar por DATOS ENVIO ATRAS'
-Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 0)
+Mobile.waitForElementPresent(findTestObject('DATOS ENVIO/Nmero de documento'), 50)
 
-'Se debe cambiar por DATOS ENVIO ATRAS'
-Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 0)
+Mobile.setText(findTestObject('DATOS ENVIO/Nmero de documento'), '9876543210', 50)
 
-Mobile.waitForElementPresent(findTestObject('Documento unitario/COTIZAR(ATRAS)'), 500)
+Mobile.waitForElementPresent(findTestObject('DATOS ENVIO/D.E. SIGUIENTE'), 50)
 
-Mobile.tap(findTestObject('Documento unitario/COTIZAR(ATRAS)'), 50)
+Mobile.tap(findTestObject('DATOS ENVIO/D.E. SIGUIENTE'), 50)
 
-Mobile.waitForElementPresent(findTestObject('Documento unitario/CE atras'), 500)
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/Nombre Remitente'), 0)
 
-Mobile.tap(findTestObject('Documento unitario/CE atras'), 50)
+Mobile.setText(findTestObject('Datos Remitente/Nombre Remitente'), 'Juan Pablo', 50)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/menu_hamburguesa'), 50)
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/Apellidos Remitente'), 50)
 
-Mobile.tap(findTestObject('Object Repository/cerrar sesion/menu_hamburguesa'), 50)
+Mobile.setText(findTestObject('Datos Remitente/Apellidos Remitente'), 'Ramírez Melo', 50)
 
-Mobile.waitForElementPresent(findTestObject('cerrar sesion/boton cerrar sesion'), 50)
+Mobile.waitForElementPresent(findTestObject('Datos del destinatario/Spinner.Tipodepersona.'), 50)
 
-Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Datos del destinatario/Spinner.Tipodepersona.'), 50)
 
-Mobile.tap(findTestObject('cerrar sesion/boton cerrar sesion'), 50)
+Mobile.waitForElementPresent(findTestObject('Datos del destinatario/1 Persona natural'), 50)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/bloquear-aceptar'), 50)
+Mobile.tap(findTestObject('Datos del destinatario/1 Persona natural'), 50)
 
-Mobile.tap(findTestObject('Object Repository/cerrar sesion/bloquear-aceptar'), 50)
+Mobile.scrollToText('Teléfono')
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/Cerrar sesin'), 50)
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/Regimen'), 50)
 
-Mobile.tap(findTestObject('Object Repository/cerrar sesion/Cerrar sesin'), 50)
+Mobile.tap(findTestObject('Datos del destinatario/Regimen'), 50)
 
-Mobile.tap(findTestObject('Object Repository/cerrar sesion/bloq_continuar'), 50)
+Mobile.waitForElementPresent(findTestObject('Datos del destinatario/1 Comun--'), 50)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/Sesion cerrada'), 50)
+Mobile.tap(findTestObject('Datos del destinatario/1 Comun--'), 50)
 
-Mobile.pressBack()
+Mobile.waitForElementPresent(findTestObject('Datos del destinatario/Direccion (1)'), 50)
 
-Mobile.closeApplication()
+Mobile.setText(findTestObject('Datos del destinatario/Direccion (1)'), 'Cl. 58a Sur #17-14', 50)
+
+Mobile.scrollToText('Código postal', FailureHandling.OPTIONAL)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/Telefono-EditText1'), 50)
+
+Mobile.setText(findTestObject('Prueba/Telefono-EditText1'), '4582901', 50)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/Email-EditText2'), 50)
+
+Mobile.setText(findTestObject('Prueba/Email-EditText2'), 'demo@key-mail.net', 50)
+
+Mobile.waitForElementPresent(findTestObject('Datos del destinatario/Facturar'), 50)
+
+Mobile.tap(findTestObject('Datos del destinatario/Facturar'), 50)
 
