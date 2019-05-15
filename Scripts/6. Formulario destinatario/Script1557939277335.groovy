@@ -35,7 +35,7 @@ Mobile.pressBack()
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Login/Input_user'), 50)
 
-Mobile.setText(findTestObject('Object Repository/Login/Input_user'), '1069719597', 50)
+Mobile.setText(findTestObject('Object Repository/Login/Input_user'), '1022330668', 50)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Login/input_password'), 50)
 
@@ -280,4 +280,69 @@ Mobile.setText(findTestObject('Prueba/Email-EditText2'), 'demo@key-mail.net', 50
 Mobile.waitForElementPresent(findTestObject('Datos del destinatario/Facturar'), 50)
 
 Mobile.tap(findTestObject('Datos del destinatario/Facturar'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/ALERTA - ACEPTAR (1)'), 500)
+
+Mobile.tap(findTestObject('Prueba/ALERTA - ACEPTAR (1)'), 500)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/Gestion con cobro - CERRAR'), 500)
+
+Mobile.tap(findTestObject('Prueba/Gestion con cobro - CERRAR'), 500)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/Confirmacion - ACEPTAR'), 50)
+
+Mobile.tap(findTestObject('Prueba/Confirmacion - ACEPTAR'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Prueba/DD- ATRS'), 50)
+
+Mobile.tap(findTestObject('Prueba/DD- ATRS'), 50)
+
+'Se debe cambiar por DATOS ENVIO ATRAS'
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+
+Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+
+Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 50)
+
+'Se debe cambiar por DATOS ENVIO ATRAS'
+Mobile.waitForElementPresent(findTestObject('Datos Remitente/DR- ATRAS'), 0)
+
+'Se debe cambiar por DATOS ENVIO ATRAS'
+Mobile.tap(findTestObject('Datos Remitente/DR- ATRAS'), 0)
+
+Mobile.waitForElementPresent(findTestObject('Documento unitario/COTIZAR(ATRAS)'), 500)
+
+Mobile.tap(findTestObject('Documento unitario/COTIZAR(ATRAS)'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Documento unitario/CE atras'), 500)
+
+Mobile.tap(findTestObject('Documento unitario/CE atras'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/menu_hamburguesa'), 50)
+
+Mobile.tap(findTestObject('Object Repository/cerrar sesion/menu_hamburguesa'), 50)
+
+Mobile.waitForElementPresent(findTestObject('cerrar sesion/boton cerrar sesion'), 50)
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('cerrar sesion/boton cerrar sesion'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/bloquear-aceptar'), 50)
+
+Mobile.tap(findTestObject('Object Repository/cerrar sesion/bloquear-aceptar'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/Cerrar sesin'), 50)
+
+Mobile.tap(findTestObject('Object Repository/cerrar sesion/Cerrar sesin'), 50)
+
+Mobile.tap(findTestObject('Object Repository/cerrar sesion/bloq_continuar'), 50)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/cerrar sesion/Sesion cerrada'), 50)
+
+Mobile.pressBack()
+
+Mobile.closeApplication()
 

@@ -35,7 +35,7 @@ Mobile.pressBack()
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Login/Input_user'), 50)
 
-Mobile.setText(findTestObject('Object Repository/Login/Input_user'), '1069719597', 50)
+Mobile.setText(findTestObject('Object Repository/Login/Input_user'), '1022330668', 50)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/Login/input_password'), 50)
 
